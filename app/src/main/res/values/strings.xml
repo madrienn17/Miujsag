@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Miujsag</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_subtitle">user@somethingmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_current">Current newspaper</string>
+    <string name="menu_archive">Archive</string>
+    <string name="menu_members">Membership</string>
+    <string name="message_us">Message us</string>
+    <string name="this_is_the_archive_fragment">This is the archive fragment!</string>
+    <string name="this_is_the_current_fragment">This is the current fragment!</string>
+    <string name="this_is_the_members_fragment">This is the members fragment!</string>
+</resources>
