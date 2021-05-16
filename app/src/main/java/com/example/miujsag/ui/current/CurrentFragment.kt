@@ -63,7 +63,6 @@ class CurrentFragment :Fragment() {
         webview.settings.allowFileAccessFromFileURLs = true
         webview.settings.loadsImagesAutomatically = true
         webview.settings.mixedContentMode = 0
-        webview.settings.safeBrowsingEnabled = true
         // enable Web Storage: localStorage, sessionStorage
         webview.settings.domStorageEnabled = true
 
