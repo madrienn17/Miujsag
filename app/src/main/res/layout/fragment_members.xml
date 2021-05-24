@@ -11,12 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
         android:textSize="20sp"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,64 +27,64 @@
 
     <TextView
         android:id="@+id/fb_link"
-        android:layout_width="279dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_width="334dp"
+        android:layout_height="27dp"
         android:text="@string/fb_link"
         android:textColor="@color/purple_200"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/subtitle_members"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/social_img"
-        app:layout_constraintTop_toBottomOf="@+id/text_members" />
+        app:layout_constraintTop_toBottomOf="@+id/submit_cikk" />
 
     <ImageView
         android:id="@+id/social_img"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:src="@android:drawable/ic_menu_share"
-        app:layout_constraintBottom_toTopOf="@+id/subtitle_members"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fb_link"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_members"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintTop_toBottomOf="@+id/submit_cikk" />
 
     <TextView
         android:id="@+id/subtitle_members"
-        android:layout_width="290dp"
-        android:layout_height="137dp"
+        android:layout_width="319dp"
+        android:layout_height="149dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="@string/cikk_bekuldes"
         android:textColor="@color/purple_500"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:typeface="sans"
         app:layout_constraintBottom_toTopOf="@+id/submit_cikk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fb_link"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/submit_cikk"
         android:layout_width="205dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginBottom="150dp"
+        android:layout_height="80dp"
         android:text="FELTÖLTÉS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitle_members"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/feketemiuj"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle_members"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@
         <ImageView
             android:id="@+id/image_view_logo"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/miujsag" />
 
@@ -28,8 +28,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="50dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
                 android:text="Login"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -64,7 +64,6 @@
                 android:layout_marginBottom="5dp"
                 android:drawableStart="@drawable/ic_lock"
                 android:drawableLeft="@drawable/ic_lock"
-                android:drawablePadding="16dp"
                 android:hint="Your Ultra Secret Password"
                 android:inputType="textPassword"
                 android:padding="12dp" />
@@ -73,8 +72,8 @@
                 android:id="@+id/text_view_forget_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:text="Forget Password?"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -83,7 +82,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="Sign In"
                 android:textAllCaps="false" />
 
@@ -95,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/linearLayout2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Don't have an account?Sign up here"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
