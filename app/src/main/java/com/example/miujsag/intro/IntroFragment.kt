@@ -6,14 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.example.miujsag.R
 
 
-class IntroFragment : Fragment(),View.OnClickListener {
+class IntroFragment : Fragment() {
+    private lateinit var userButton: Button
+    private lateinit var editorButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -21,21 +23,20 @@ class IntroFragment : Fragment(),View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_intro, container, false)
-        val btnOlvaso: Button = view.findViewById(R.id.olvaso)
-        val btnSzerkeszto:Button = view.findViewById(R.id.szerkeszto)
-        btnOlvaso.setOnClickListener(this)
-        return view
+        return  inflater.inflate(R.layout.fragment_intro, container, false)
     }
 
-    override fun onClick(v: View?) {
-        when(v?.id){
-            R.id.olvaso->{
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        view.apply {
+           userButton = findViewById(R.id.olvaso)
+           editorButton = findViewById(R.id.szerkeszto)
+        }
 
-            }
-            else->{
-
-            }
+        userButton.setOnClickListener {
+            findNavController().navigate(R.id.action_introFragment_to_nav_current)
+        }
+        editorButton.setOnClickListener {
+            findNavController().navigate(R.id.action_introFragment_to_loginFragment)
         }
     }
 }

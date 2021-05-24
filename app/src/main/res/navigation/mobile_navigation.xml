@@ -71,6 +71,9 @@
         <action
             android:id="@+id/action_introFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_nav_current"
+            app:destination="@id/nav_current" />
     </fragment>
 
 </navigation>
